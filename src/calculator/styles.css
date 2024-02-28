@@ -1,0 +1,56 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1.5fr repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grip-row-gap: 0px;
+  height: 560px;
+  width: 400px;
+  border-radius: 20px;
+  overflow: hidden;
+  color: white;
+}
+
+.display {
+  grid-area: 1 / 1 / 2 / 5;
+  background-color: #505050;
+}
+
+#zero {
+  grid-area: 6 / 1 / 7 / 3;
+}
+
+.display:focus {
+  outline: none;
+}
+
+.operator,
+.equal {
+  background-color: #f3a33a;
+}
+
+.operator:active,
+.equal:active {
+  opacity: 0.8;
+}
+
+.operator:focus,
+.operator:focus-visible {
+  outline: 2px solid black;
+}
+
+.number {
+  background-color: #7b7b7b;
+}
+
+.number:active {
+  background-color: #ccc;
+}
+
+.other {
+  background-color: #616161;
+}
+
+.other:active {
+  background-color: #7b7b7b;
+}
